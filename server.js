@@ -18,14 +18,6 @@ const posts = require('./routes/posts');
 const comments = require('./routes/comments');
 const stages = require('./routes/stages');
 
-// var allowCrossDomain = function (req, res, next) {
-//   res.header('Allow-Control-Allow-Origin', '*');
-//   res.header('Allow-Control-Allow-Methods', 'GET,PUT,POST,DELETE,OPTIONS');
-//   res.header('Allow-Control-Allow-Headers', 'Content-Type');
-//   next();
-// };
-//
-// app.use(allowCrossDomain);
 app.use('/api/users', users);
 app.use('/api/musicians', musicians);
 app.use('/api/workshops', workshops);
